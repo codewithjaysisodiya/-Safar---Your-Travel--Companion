@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safar - Your Travel Companion | Discover Incredible India</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <span class="logo-icon">🧳</span>
+            <span>Safar - <span style="font-weight:400; font-size: 16px;">Your Travel Companion</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#why-us">Why Safar</a>
+            <a href="#about">About</a>
+        </nav>
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="register-btn">Get Started</a>
+        </div>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge">✨ Explore. Experience. Remember.</div>
+                <h1>Your next <span>beautiful journey</span> starts here.</h1>
+                <p>Discover the most beautiful places in India, find hidden gems and plan your perfect escape with Safar - Your Travel Companion.</p>
+                <div class="search-box">
+                    <div class="search-item">
+                        <div class="search-icon">📍</div>
+                        <div>
+                            <label>Where do you want to go?</label>
+                            <select id="stateSelect">
+                                <option value="">Select a state</option>
+                                <option value="uttar-pradesh">Uttar Pradesh</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="rajasthan">Rajasthan</option>
+                                <option value="himachal-pradesh">Himachal Pradesh</option>
+                                <option value="uttarakhand">Uttarakhand</option>
+                                <option value="goa">Goa</option>
+                                <option value="kerala">Kerala</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="gujarat">Gujarat</option>
+                                <option value="jammu-kashmir">Jammu & Kashmir</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="explore-btn" id="exploreBtn">Explore <span>→</span></button>
+                </div>
+                <p class="search-hint">💡 Select a state to discover its best destinations</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stat"><strong>28+</strong><span>States to Explore</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>500+</strong><span>Beautiful Places</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>100%</strong><span>Travel Inspiration</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>∞</strong><span>Memories to Make</span></div>
+        </section>
+
+        <section class="destinations-section" id="destinations">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">POPULAR DESTINATIONS</span>
+                    <h2>Places that <span>steal your heart.</span></h2>
+                </div>
+                <p>From majestic mountains to peaceful beaches, discover India's most unforgettable destinations.</p>
+            </div>
+            <div class="destination-grid">
+                <article class="destination-card large-card">
+                    <div class="destination-image taj-mahal">
+                        <div class="card-overlay"></div>
+                        <span class="place-tag">Historical</span>
+                        <div class="card-content">
+                            <span class="location">📍 Agra, Uttar Pradesh</span>
+                            <h3>Taj Mahal</h3>
+                            <p>A timeless symbol of love and one of the world's most beautiful monuments.</p>
+                            <button class="discover-btn" data-state="uttar-pradesh">Discover →</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="destination-image manali">
+                        <div class="card-overlay"></div>
+                        <span class="place-tag">Mountains</span>
+                        <div class="card-content">
+                            <span class="location">📍 Himachal Pradesh</span>
+                            <h3>Manali</h3>
+                            <p>Snowy mountains, peaceful valleys and unforgettable adventures.</p>
+                            <button class="discover-btn" data-state="himachal-pradesh">Discover →</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="destination-image jaipur">
+                        <div class="card-overlay"></div>
+                        <span class="place-tag">Heritage</span>
+                        <div class="card-content">
+                            <span class="location">📍 Rajasthan</span>
+                            <h3>Jaipur</h3>
+                            <p>Royal palaces, vibrant culture and magnificent architecture.</p>
+                            <button class="discover-btn" data-state="rajasthan">Discover →</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="destination-image kerala">
+                        <div class="card-overlay"></div>
+                        <span class="place-tag">Nature</span>
+                        <div class="card-content">
+                            <span class="location">📍 Kerala</span>
+                            <h3>Kerala</h3>
+                            <p>Lush greenery, peaceful backwaters and tropical beauty.</p>
+                            <button class="discover-btn" data-state="kerala">Discover →</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="destination-image goa">
+                        <div class="card-overlay"></div>
+                        <span class="place-tag">Beach</span>
+                        <div class="card-content">
+                            <span class="location">📍 Goa</span>
+                            <h3>Goa</h3>
+                            <p>Golden beaches, sunsets and unforgettable coastal vibes.</p>
+                            <button class="discover-btn" data-state="goa">Discover →</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="why-section" id="why-us">
+            <div class="why-image">
+                <div class="floating-card">
+                    <span class="floating-icon">❤</span>
+                    <div><strong>Made for explorers</strong><small>Find places you'll love</small></div>
+                </div>
+            </div>
