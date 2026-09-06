@@ -3,7 +3,7 @@
 
 Safar - Your Travel Companion is a modern, responsive travel platform that helps users discover India's most beautiful destinations. From Taj Mahal to Goa beaches, find hidden gems and plan your perfect escape.
 
-**Live Demo:** https://your-username.github.io/safar-app/
+**Live Demo:** https://codeswithjaysisodiya.github.io/safar-app/
 
 ### ✨ Features
 - 📍 **State-wise Search:** Select any state (UP, Rajasthan, Kerala, Goa etc.) and discover places
